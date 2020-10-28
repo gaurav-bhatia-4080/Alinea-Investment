@@ -11,11 +11,13 @@ body{
 
 .navbar-transparent
 {
-    background-color: #ae42c9;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
 }
 .navbar-transparent2
 {
-    background-color: #752ba0;
+    background-color: #002e4f;
+    transition: all 0.5s ease-in-out;
 }
 
 .img-responsive
@@ -25,7 +27,7 @@ body{
 
 .background-img
 {
-    background-color: #ae42c9;
+    background-color: var(--theme-color);
     /* background-image: url((unknown)); */
     background-repeat: no-repeat;
     background-position: center center;
@@ -33,7 +35,7 @@ body{
     position: relative;
     width: 100%;
     display: block;
-    height: 90vh;
+    height: 94vh;
 }
 
 .hero-text h1 span
@@ -187,6 +189,9 @@ body{
     --tileWidth : 250px;
     --tileHeight : (var(--tileWidth) / (16/9));
 
+    /* Theme Color */
+    --theme-color:#001f35;
+
 }
 
 /* Carousel Container */
@@ -222,7 +227,7 @@ body{
 }
 .carousel-tile .effect{
     padding: 4em;
-    background: #f7ecfa;
+    background: #d2ecff;
     box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
     border-radius: 1.5rem !important;
     height: 100%;
@@ -345,7 +350,7 @@ body{
 
 .comm-back
 {
-    background-color: #ae42c9;
+    background-color: var(--theme-color);
     /* background-image: url((unknown)); */
     background-repeat: no-repeat;
     background-position: center center;
@@ -371,7 +376,7 @@ body{
 }
 .owl-dots .active span
 {
-    background-color: #ae42c9!important;
+    background-color: var(--theme-color)!important;
 }
 
 .item .img-c{
@@ -387,7 +392,7 @@ body{
     position: relative;
     display: block;
     width: 100%;    
-    background-color: #ae42c9;
+    background-color: var(--theme-color);
     /* background-image: url((unknown)); */
     background-repeat: no-repeat;
     background-position: center center;
@@ -437,7 +442,7 @@ body{
     top: 4px;
     bottom: 4px;
     width: 35%;
-    background: #ae42c9;
+    background: var(--theme-color);
     color: white;
 }
 
@@ -558,7 +563,7 @@ body{
 
 .message-icon-trigger
 {
-    background-color: #ae42c9;
+    background-color: var(--theme-color);
     width:60px;
     height:60px;
     border-radius:50%;

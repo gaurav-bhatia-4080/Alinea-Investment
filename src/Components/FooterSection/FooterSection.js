@@ -1,12 +1,52 @@
 import React from "react";
 import  "reactstrap";
-
+import Particles from 'react-particles-js'
 function FooterSection() {
 
   return (
       <footer className="foot-secton">
           <div class="footer-top pt-150 pb-5 background-img2">
               <div className="container">
+                <Particles
+                        style={{ position: "absolute" , top:"0", left:"0"}}
+                        height="100%"
+                        width="100%"
+
+                        params={{
+                        particles: {
+                                color: {
+                                value: "#ffffff"
+                                },
+                                line_linked: {
+                                color: {
+                                    value: "#ffffff"
+                                }
+                                },
+                                number: {
+                                value: 100
+                                },
+                                size: {
+                                value: 4
+                            }
+                        },
+                        "interactivity": {
+                            "detect_on": "window",
+                            "events": {
+                                "onhover": {
+                                    "enable": true,
+                                    "mode": "repulse"
+                                },
+                                "onclick": {
+                                    "enable": false,
+                                    "mode": "bubble"
+                                },
+                                "resize": true
+                            }
+                        }
+                        }}
+
+
+                    ></Particles>
                   <div className="row justify-content-between">
                       <div className="col-lg-3 mb-3 mb-lg-0">
                           <div className="footer-nav-wrap text-white">

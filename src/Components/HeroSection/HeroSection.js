@@ -1,12 +1,55 @@
 import React from "react";
 import  "reactstrap";
 import Typing from 'react-typing-animation';
+import Particles from 'react-particles-js'
 function HeroSection() {
 
   return (
     <>
+        
         <section className="background-img">
             <div className="container">
+                <Particles
+                    style={{ position: "absolute" , top:"0", left:"0"}}
+                    height="100%"
+                    width="100%"
+
+                    params={{
+                    particles: {
+                            color: {
+                            value: "#ffffff"
+                            },
+                            line_linked: {
+                            color: {
+                                value: "#ffffff"
+                            }
+                            },
+                            number: {
+                            value: 160
+                            },
+                            size: {
+                            value: 4
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "window",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "repulse"
+                            },
+                            "onclick": {
+                                "enable": false,
+                                "mode": "bubble"
+                            },
+                            "resize": true
+                        }
+                    }
+                    }}
+
+
+                ></Particles>
+                <br/><br/><br/><br/>
                 <div className="row align-items-center  py-5">
                     <div className="col-md-7 col-lg-6">
                         <div className="hero-text text-white">

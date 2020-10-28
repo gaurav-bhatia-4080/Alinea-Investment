@@ -30,9 +30,9 @@ class App extends React.Component {
     return (
       <>
         <IndexNavbar />
+        {/* <br/>
         <br/>
-        <br/>
-        <br/>
+        <br/> */}
         <HeroSection />
         <PromoSection />
         <FeatureSection />
