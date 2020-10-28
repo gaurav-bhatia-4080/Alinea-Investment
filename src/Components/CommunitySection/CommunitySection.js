@@ -24,7 +24,11 @@ function CommunitySection() {
                               }
                               },
                               number: {
-                              value: 70
+                              value: 50,
+                              density:{
+                                enable:true,
+                                value_area:300
+                              }
                               },
                               size: {
                               value: 4
