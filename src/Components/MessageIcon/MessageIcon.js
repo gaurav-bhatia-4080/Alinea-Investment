@@ -37,7 +37,7 @@ function MessageIcon() {
 
             <div id="overlay" className="message-icon-overlay hidden">
               <button onClick={toggleOverlay}>Close</button>
-              {/* <Iframe src="https://circle.alinea-invest.com/c/investwithintention" frameborder="0" aria-hidden="false" tabindex="0"></Iframe> */}
+              <Iframe src="https://circle.alinea-invest.com/c/investwithintention" frameborder="0" aria-hidden="false" tabindex="0"></Iframe>
             </div>
         </div>
     </>
